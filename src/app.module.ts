@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { createObserveModule } from '@nestjs/observe';
 import { ProductsModule } from './products/products.module.js';
+import { ClientesModule } from './clientes/clientes.module.js';
 
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
@@ -15,6 +16,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       serviceId: 'products',
     }),
     ProductsModule,
+    ClientesModule,
   ],
   controllers: [],
   providers: [],
