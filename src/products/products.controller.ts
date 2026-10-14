@@ -15,6 +15,8 @@ export class ProductsController {
    //return createProductDto;
   }
 
+    //POST producto uno y producto dos
+    //tarea 1 punto 2
 
   @Get()
   findAll() {
